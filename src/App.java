@@ -64,19 +64,45 @@ public class App {
         // System.out.println("Du får inte komma in!");
         // }
 
-      Scanner t=new Scanner(System.in);
-        System.out.println("Ange Användarnamn:");
-        String anv=t.nextLine();
-        System.out.println("Ange Lösenord");
-        String lös=t.nextLine();
-        if(anv.equals("root") && lös.equals("passwd"))   
-        {
-        System.out.println("Inloggningen lyckades!");
-        }
-        else
-        {
-        System.out.println("Fel Användarnamn/Lösenord");
-        }
+    //   Scanner t=new Scanner(System.in);
+    //     System.out.println("Ange Användarnamn:");
+    //     String anv=t.nextLine();
+    //     System.out.println("Ange Lösenord");
+    //     String lös=t.nextLine();
+    //     if(anv.equals("root") && lös.equals("passwd"))   
+    //     {
+    //     System.out.println("Inloggningen lyckades!");
+    //     }
+    //     else
+    //     {
+    //     System.out.println("Fel Användarnamn/Lösenord");
+    //     }
+
+    Scanner t=new Scanner(System.in);
+    System.out.println("Meny Väderprogram");
+    System.out.println("1. Skriv ut temperatur");
+    System.out.println("2. Skriv ut Vind");
+    System.out.println("3. Skriv ut luftfuktighet");
+    System.out.print("Ange val:");    
+    int val=t.nextInt();
+    switch(val)
+    {
+    case 1:
+    System.out.println("Det är 18 grader"); 
+    break;
+    case 2:
+    System.out.println("Vinden är 10 sekund-meter");
+    break;
+    case 3:
+    System.out.println("Det är 100% luftfuktighet");
+    break;
+    default:
+    System.out.println("Fel val! Välj mellan 1-3");
+    break;
+
+        
+    }
+
     }
 }
 
