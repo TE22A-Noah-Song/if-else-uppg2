@@ -50,20 +50,33 @@ public class App {
         // System.out.println("dags att gå upp.");
         // }
         
-        Scanner t=new Scanner(System.in);
-        System.out.println("Är du medlem i klubben? Ja/Nej");
-        String medlem=t.nextLine();
-        System.out.println("Är du över 18? Ja/Nej");
-        String ålder=t.nextLine();
-        if(ålder.equalsIgnoreCase("Ja")||medlem.equalsIgnoreCase("Ja"))
+        // Scanner t=new Scanner(System.in);
+        // System.out.println("Är du medlem i klubben? Ja/Nej");
+        // String medlem=t.nextLine();
+        // System.out.println("Är du över 18? Ja/Nej");
+        // String ålder=t.nextLine();
+        // if(ålder.equalsIgnoreCase("Ja")||medlem.equalsIgnoreCase("Ja"))
+        // {
+        // System.out.println("Du får komma in!");
+        // }
+        // else
+        // {
+        // System.out.println("Du får inte komma in!");
+        // }
+
+      Scanner t=new Scanner(System.in);
+        System.out.println("Ange Användarnamn:");
+        String anv=t.nextLine();
+        System.out.println("Ange Lösenord");
+        String lös=t.nextLine();
+        if(anv.equals("root") && lös.equals("passwd"))   
         {
-        System.out.println("Du får komma in!");
+        System.out.println("Inloggningen lyckades!");
         }
         else
         {
-        System.out.println("Du får inte komma in!");
+        System.out.println("Fel Användarnamn/Lösenord");
         }
-
     }
 }
 
